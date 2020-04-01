@@ -24,3 +24,14 @@ TrackableList(onLast: {
 }
 ```
 
+## Hide dividers
+```swift
+TrackableList(onLast: {
+                print("perfrom an action here.")
+            }, showDividers: false) {
+                ForEach(0..<100) { index in
+                    Text("Item \(index)")
+                    .padding()
+                }
+            }
+```
