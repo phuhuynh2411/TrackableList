@@ -67,7 +67,7 @@ public struct TrackableList<Content>: View where Content: View {
         if self.contentSize.height - abs(self.contentOffset) <= self.visibleSize.height + self.threshold, self.isScrollOnly {
             if !isLast {
                 self.isLast = true
-                DispatchQueue.main.asyncAfter {
+                DispatchQueue.main.async {
                     self.action?()
                 }
             }
