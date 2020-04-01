@@ -1,6 +1,6 @@
 # TrackableList
 
-Perfrom an action when scrolling to last.
+Add the ability for the List in SwiftUI to perform an action when scrolling to last.
 
 ![Perform an action when scrolling to last](perform_action_when_last.gif)
 
