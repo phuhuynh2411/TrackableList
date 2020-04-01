@@ -23,7 +23,7 @@ public struct TrackableList<Content>: View where Content: View {
                 ZStack {
                     GeometryReader { proxy2 in
                         Color
-                            .red
+                            .clear
                             .preference(key: ContentSizePreferenceKey.self
                                 , value: [ContentSizePreferenceData(size: proxy2.frame(in: .global).size)])
                     }
